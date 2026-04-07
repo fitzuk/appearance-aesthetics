@@ -23,11 +23,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <svg className="w-8 h-8" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 20 50 Q 30 30 50 25 Q 70 30 80 50 Q 75 70 50 75 Q 25 70 20 50" fill="none" stroke="#e11d48" strokeWidth="2" strokeLinecap="round"/>
-              <path d="M 30 45 Q 50 35 70 45" fill="none" stroke="#e11d48" strokeWidth="2" strokeLinecap="round"/>
-              <path d="M 35 55 Q 50 60 65 55" fill="none" stroke="#e11d48" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M 20 50 Q 30 30 50 25 Q 70 30 80 50 Q 75 70 50 75 Q 25 70 20 50" fill="none" stroke="#d4af37" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M 30 45 Q 50 35 70 45" fill="none" stroke="#d4af37" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M 35 55 Q 50 60 65 55" fill="none" stroke="#d4af37" strokeWidth="2" strokeLinecap="round"/>
             </svg>
-            <h1 className="text-2xl font-bold text-rose-600" style={{fontFamily: 'Georgia, serif', fontStyle: 'italic'}}>Appearance Aesthetics</h1>
+            <h1 className="text-2xl font-bold" style={{color: '#d4af37', fontFamily: 'Georgia, serif', fontStyle: 'italic'}}>Appearance Aesthetics</h1>
           </div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-700 hover:text-rose-600 transition">Services</a>
