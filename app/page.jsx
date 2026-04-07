@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { Syringe, Sparkles, Diamond, Smile, Mail, MessageSquare, Check } from 'lucide-react'
 
 export default function Home() {
   const [email, setEmail] = useState('')
@@ -20,7 +21,14 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-rose-600">Appearance Aesthetics</h1>
+          <div className="flex items-center gap-3">
+            <svg className="w-8 h-8" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 20 50 Q 30 30 50 25 Q 70 30 80 50 Q 75 70 50 75 Q 25 70 20 50" fill="none" stroke="#e11d48" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M 30 45 Q 50 35 70 45" fill="none" stroke="#e11d48" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M 35 55 Q 50 60 65 55" fill="none" stroke="#e11d48" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+            <h1 className="text-2xl font-bold text-rose-600" style={{fontFamily: 'Georgia, serif', fontStyle: 'italic'}}>Appearance Aesthetics</h1>
+          </div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-700 hover:text-rose-600 transition">Services</a>
             <a href="#team" className="text-gray-700 hover:text-rose-600 transition">Team</a>
@@ -58,7 +66,7 @@ export default function Home() {
             {/* Botox */}
             <div className="bg-gradient-to-br from-rose-50 to-pink-50 p-8 rounded-xl hover:shadow-lg transition">
               <div className="w-12 h-12 bg-rose-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-xl">💉</span>
+                <Syringe className="text-white" size={24} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Botox</h3>
               <p className="text-gray-600">
@@ -69,7 +77,7 @@ export default function Home() {
             {/* Skin Boosters */}
             <div className="bg-gradient-to-br from-rose-50 to-pink-50 p-8 rounded-xl hover:shadow-lg transition">
               <div className="w-12 h-12 bg-rose-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-xl">✨</span>
+                <Sparkles className="text-white" size={24} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Skin Boosters</h3>
               <p className="text-gray-600">
@@ -80,7 +88,7 @@ export default function Home() {
             {/* Dermal Fillers */}
             <div className="bg-gradient-to-br from-rose-50 to-pink-50 p-8 rounded-xl hover:shadow-lg transition">
               <div className="w-12 h-12 bg-rose-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-xl">💎</span>
+                <Diamond className="text-white" size={24} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Dermal Fillers</h3>
               <p className="text-gray-600">
@@ -91,7 +99,7 @@ export default function Home() {
             {/* Treatments */}
             <div className="bg-gradient-to-br from-rose-50 to-pink-50 p-8 rounded-xl hover:shadow-lg transition">
               <div className="w-12 h-12 bg-rose-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-xl">💄</span>
+                <Smile className="text-white" size={24} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Aesthetic Treatments</h3>
               <p className="text-gray-600">
@@ -112,9 +120,7 @@ export default function Home() {
 
           <div className="max-w-md mx-auto">
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-              <div className="w-full h-64 bg-gradient-to-br from-rose-200 to-pink-300 flex items-center justify-center">
-                <div className="text-8xl">👩‍⚕️</div>
-              </div>
+              <img src="/danielle.jpg" alt="Danielle" className="w-full h-64 object-cover" />
               <div className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Danielle</h3>
                 <p className="text-rose-600 font-semibold mb-3">Lead Aesthetician</p>
